@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./blaze-fill.svg" type="image/x-icon" />
+    <title>Meal | Search your favourite meal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Html -->
+
+    <!-- Container -->
+    <div class="container">
+      <!-- Nav bar -->
+      <div class="header_container">
+        <!-- logo -->
+        <a
+          href="https://github.com/gharsh11032000"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="logo"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              d="M18.5 9c1 1.06 1.5 2.394 1.5 4 0 3.466-3.7 4.276-5.5 9-.667-.575-1-1.408-1-2.5 0-3.482 5-5.29 5-10.5zm-4-4c1.2 1.238 1.8 2.572 1.8 4 0 4.951-6.045 5.692-4.8 13C9.833 20.84 9 19.173 9 17c0-3.325 5.5-6 5.5-12zM10 1c1.333 1.667 2 3.167 2 4.5 0 6.25-8.5 8.222-4 16.5-2.616-.58-4.5-3-4.5-6C3.5 9.5 10 8.5 10 1z"
+            />
+          </svg>
+          <span>お食事</span>
+        </a>
+        <!-- Search field container -->
+        <form class="form">
+          <input type="text" class="input" placeholder="Search meal name" />
+          <!-- Form submit btn -->
+          <button type="submit" class="btn_submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+              />
+            </svg>
+            <span>Search</span>
+          </button>
+          <!-- Random search btn -->
+          <button class="btn-random" type="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M18 17.883V16l5 3-5 3v-2.09a9 9 0 0 1-6.997-5.365L11 14.54l-.003.006A9 9 0 0 1 2.725 20H2v-2h.725a7 7 0 0 0 6.434-4.243L9.912 12l-.753-1.757A7 7 0 0 0 2.725 6H2V4h.725a9 9 0 0 1 8.272 5.455L11 9.46l.003-.006A9 9 0 0 1 18 4.09V2l5 3-5 3V6.117a7 7 0 0 0-5.159 4.126L12.088 12l.753 1.757A7 7 0 0 0 18 17.883z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Message element -->
+      <h2 class="search_result-heading">What do you want to eat ?</h2>
+
+      <!-- Main container -->
+      <div class="content_container">
+        <div class="meal_details"></div>
+        <!-- Meals result -->
+        <div class="search_result">
+          <h2 class="more_meal-text"></h2>
+          <div class="meals_results-container"></div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <a
+          href="http://github.com/gharsh11032000"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Made by hrsh.gupta_</a
+        >
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="index.js"></script>
+  </body>
+</html>
